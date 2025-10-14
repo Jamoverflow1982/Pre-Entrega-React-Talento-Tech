@@ -9,8 +9,13 @@ const Productos = () => {
         fetch('http://fakestoreapi.com/products')
         .then(res => res.json())
         .then(data => setProductos(data))
+        .catch(error => console.log(error))
     }, [])
 
+    if (!productos) {
+        return <p>Cargando productos...</p>;
+    }
+    
     return (
         <div className={style.productos}>
             {
