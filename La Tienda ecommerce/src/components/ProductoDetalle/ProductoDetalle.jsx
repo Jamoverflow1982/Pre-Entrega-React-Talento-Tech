@@ -37,7 +37,7 @@ const ProductoDetalle = () => {
             <div className={style.botonesCompra}>
                 <Link to = "/Productos" className="btn btn-info">Volver</Link>
                 <button type="button" className="btn btn-primary" onClick={() => alert("El producto " + producto.title + " fue comprado")}>Comprar</button>
-                <button type="button" className="btn btn-warning" onClick={() => {agregarAlCarrito(productoCarrito); alert("El producto " + producto.title + " fue agregado al carrito")}}>Agregar al Carrito</button>
+                <button type="button" className="btn btn-warning" onClick={() => {agregarAlCarrito(productoCarrito); /*alert("El producto " + producto.title + " fue agregado al carrito")*/}}>Agregar al Carrito</button>
             </div>
         </div>
     );

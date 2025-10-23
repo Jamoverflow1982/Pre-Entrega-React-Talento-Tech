@@ -7,19 +7,22 @@ import ProductoDetalle from './components/ProductoDetalle/ProductoDetalle'
 import Inicio from './components/Inicio/Inicio'
 import Footer from './components/Footer/Footer'
 import Carrito from './components/Carrito/Carrito'
+import Alerta from './components/Notificacion/Alerta'
+import 'bootstrap/dist/css/bootstrap.min.css'
 
 function App() {
 
   return (
     <>
       <Header />
-      <Routes>
+        <Routes>
         <Route path="/" element={<Inicio />} />
         <Route path="/productos" element={<Productos />} />
         <Route path="/productos/:id" element={<ProductoDetalle />} />
         <Route path="/carrito" element={<Carrito />} />
-      </Routes>
+        </Routes>
       <Footer />
+      <Alerta />
     </>
   )
 }

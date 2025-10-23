@@ -5,9 +5,12 @@ h1{
     font-weight: bold;
     font-size: 2.5rem;
 }
-h3{
+table{
+    width: 100%;
+}
+.total{
     text-align: center;
-    color: #ce196d;
+    color: #f10d77;
     padding: 2vh;
     font-weight: bold;
     font-size: 2.5rem;

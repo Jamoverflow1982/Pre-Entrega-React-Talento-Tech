@@ -1,0 +1,16 @@
+.contenedorAlerta{
+    position: fixed;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5vh;
+}
+.alerta{
+    width: 40%;
+    background-color: rgb(171, 81, 255);
+    color: white;
+    padding: 2.5vh;
+    border-radius: 10vh;
+}

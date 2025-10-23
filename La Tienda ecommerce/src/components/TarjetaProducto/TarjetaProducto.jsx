@@ -21,7 +21,7 @@ const TarjetaProducto = ({id, nombre, precio, img }) => {
                 <Button type="button" className="btn btn-info" onClick={() => navigate(`/Productos/${id}`)}>Detalles</Button>
                 <div className={style.botonesCompra}>
                     <Button type="button" className="btn btn-primary" onClick={() => alert("El producto " + nombre + " fue comprado")}>Comprar</Button>
-                    <Button type="button" className="btn btn-warning" onClick={() => {agregarAlCarrito(producto); alert("El producto " + nombre + " fue agregado al carrito")}}>Agregar al Carrito</Button>
+                    <Button type="button" className="btn btn-warning" onClick={() => {agregarAlCarrito(producto)}}>Agregar al Carrito</Button>
                 </div>
             </div>
         </div>
